@@ -1,0 +1,12 @@
+<!-- cart.html -->
+{% extends 'base.html'%}
+{% block title%}Your Cart{% endblock %}
+{% block contents %}
+{% for item, formatted_price in items_and_prices %}
+    <p>Item: {{ item.item.name }} - Price: <span style="font-weight: bold; color: red;">{{ formatted_price }}</span> - Quantity: {{ item.quantity }} - Subtotal: {{ item.subtotal }}</p>
+    <!-- 他の情報も表示する -->
+{% endfor %}
+{% endblock %}
+
+
+

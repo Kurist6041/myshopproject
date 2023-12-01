@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Item Detail{% endblock %}
+
+{% block content %}
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col offset-3">
+            <h2>商品の詳細</h2>
+            <p>タイトル: {{ item_post.title }}</p>
+            <p>内容: {{ item_post.content }}</p>
+            <!-- 他のフィールドも必要に応じて表示 -->
+        </div>
+    </div>
+</div>
+{% endblock %}
+
